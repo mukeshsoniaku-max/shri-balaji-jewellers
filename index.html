@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="hi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shri Balaji Jewellers</title>
+<style>
+body{margin:0;background:linear-gradient(135deg,#080808,#292317);color:#fff;font-family:Arial,sans-serif;min-height:100vh;display:grid;place-items:center;padding:18px;box-sizing:border-box}
+.card{width:min(410px,100%);background:#151515;border:1px solid #6a5420;border-radius:26px;padding:28px;text-align:center;box-shadow:0 18px 60px #0009}
+.logo{width:88px;height:88px;margin:auto;border-radius:50%;display:grid;place-items:center;border:2px solid #d4af37;color:#d4af37;font-size:27px;font-weight:bold}
+h1{font-size:25px;margin:17px 0 5px}.sub{color:#d5bd72;margin-bottom:22px}.btn{display:block;text-decoration:none;padding:15px;margin:11px 0;border-radius:14px;background:#292929;color:white;font-weight:bold}.save{background:#d4af37;color:#111}
+.note{font-size:12px;color:#999;line-height:1.5;margin-top:18px}
+</style></head><body>
+<div class="card">
+<div class="logo">SBJ</div>
+<h1>Shri Balaji Jewellers</h1>
+<div class="sub">Pot Market, Hyderabad</div>
+<a class="btn save" id="save">📇 Save Contact</a>
+<a class="btn" href="https://www.instagram.com/danwarmukesh" target="_blank">📸 Instagram — @danwarmukesh</a>
+<a class="btn" href="https://wa.me/919246537826" target="_blank">💬 WhatsApp</a>
+<a class="btn" href="tel:+919246537826">📞 Call — 9246537826</a>
+<div class="note">NFC Smart Card • Scan → Profile → Save Contact</div>
+</div>
+<script>
+const v=`BEGIN:VCARD
+VERSION:3.0
+FN:Shri Balaji Jewellers
+ORG:Shri Balaji Jewellers
+TEL;TYPE=CELL:+919246537826
+URL:https://www.instagram.com/danwarmukesh
+NOTE:Shri Balaji Jewellers - NFC Smart Contact
+END:VCARD`;
+const a=document.getElementById('save');
+a.href='data:text/vcard;charset=utf-8,'+encodeURIComponent(v);
+a.download='Shri-Balaji-Jewellers.vcf';
+</script>
+</body></html>
